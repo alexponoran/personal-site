@@ -4,8 +4,6 @@
 	export let num: boolean[];
 	let screenHeight: number;
 	const handleClick = (index: number) => {
-		num = num.map((item, i) => (item = false));
-		num[index] = true;
 		window.scrollTo({
 			top: screenHeight * index + 1,
 			behavior: 'smooth'
@@ -14,8 +12,8 @@
 </script>
 
 <svelte:window bind:innerHeight={screenHeight} />
-<ul class="absolute top-1/3 right-8 h-max w-fit space-y-2">
-	{#each clicked as dot, index}
+<ul class="fixed top-1/2 bottom-0 h-max w-fit space-y-2 xxs:right-1 xs:right-4 sm:right-8">
+	{#each portfolioData as _, index}
 		<button
 			on:click={() => handleClick(index)}
 			class="relative flex h-6 w-6 items-center justify-center rounded-full border-2 transition-border-color duration-300 hover:border-white {num[

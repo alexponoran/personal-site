@@ -2,6 +2,9 @@
 module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
+		backgroundImage: {
+			'hero-bg': "url('/src/img/line1.svg')"
+		},
 		fontFamily: {
 			poppins: 'Poppins, sans-serif',
 			roboto: 'Roboto, sans-serif',

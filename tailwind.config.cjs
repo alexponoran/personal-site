@@ -3,7 +3,7 @@ module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
 		backgroundImage: {
-			'hero-bg': "url('/src/img/line1.svg')"
+			'hero-bg': "url('/src/img/Background.svg')"
 		},
 		fontFamily: {
 			poppins: 'Poppins, sans-serif',
@@ -13,7 +13,8 @@ module.exports = {
 		extend: {
 			colors: {
 				portfolio: '#1A191D',
-				carmine: '#DA0A2C'
+				carmine: '#DA0A2C',
+				'slider-arrow': '#242328'
 			},
 			lineHeight: {
 				navigation: '19px'
@@ -26,9 +27,7 @@ module.exports = {
 			transitionProperty: {
 				width: 'width',
 				height: 'height',
-				'width-height': 'width, height',
-				'border-opacity': 'border-opacity',
-				'border-color': 'border-color'
+				'width-height': 'width, height'
 			},
 			plugins: []
 		}

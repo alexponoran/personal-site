@@ -1,13 +1,34 @@
 <script lang="ts">
-	import { ArrowRight } from 'carbon-icons-svelte';
-	import { ArrowLeft } from 'carbon-icons-svelte';
+	import { ArrowUp } from 'carbon-icons-svelte';
+	import { ArrowDown } from 'carbon-icons-svelte';
+	import { screenHeight } from '../../stores/screenSize';
+
+	const scrollUp = () => {
+		window.scrollTo({
+			top: -$screenHeight,
+			behavior: 'smooth'
+		});
+	};
+	const scrollDown = () => {
+		window.scrollTo({
+			top: $screenHeight,
+			behavior: 'smooth'
+		});
+	};
 </script>
 
-<div class="absolute bottom-10 left-0 right-0 flex justify-center gap-x-8">
-	<div class="rounded-full bg-[#242328] p-2 transition-colors hover:text-carmine">
-		<span><ArrowLeft size={24} /></span>
+<!-- svelte-ignore a11y-click-events-have-key-events -->
+<div class="absolute bottom-4 left-0 right-0 flex justify-center gap-x-8">
+	<div
+		on:click={scrollUp}
+		class="rounded-full bg-slider-arrow p-2 transition-colors hover:text-carmine"
+	>
+		<span><ArrowUp size={24} /></span>
 	</div>
-	<div class="rounded-full bg-[#242328] p-2 transition-colors hover:text-carmine">
-		<span><ArrowRight size={24} /></span>
+	<div
+		on:click={scrollDown}
+		class="rounded-full bg-slider-arrow p-2 transition-colors hover:text-carmine"
+	>
+		<span><ArrowDown size={24} /></span>
 	</div>
 </div>

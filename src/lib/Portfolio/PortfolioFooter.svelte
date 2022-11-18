@@ -4,7 +4,7 @@
 	import { LogoFacebook } from 'carbon-icons-svelte';
 </script>
 
-<div class="fixed bottom-10 right-16 flex gap-x-2">
+<div class="fixed bottom-5 right-16 flex gap-x-2 text-white">
 	<a href="#/">
 		<LogoGithub size={24} />
 	</a>

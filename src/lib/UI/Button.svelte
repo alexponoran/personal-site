@@ -4,7 +4,9 @@
 	export let type: ButtonType = 'button';
 	export let color = 'transparent';
 	export let size = 'normal';
-	export let effect = 'after:bg-blue-400';
+	export let effect =
+		'after:absolute after:top-0 after:left-0 after:-z-10 after:h-0 after:w-0 after:transition-width-height hover:after:h-full hover:after:w-full';
+	export let effectColor = 'after:bg-blue-400';
 	let className = '';
 	export { className as class };
 
@@ -15,6 +17,9 @@
 			break;
 		case 'portfolio':
 			classes.push('border-2', 'border-white', 'hover:text-white', 'hover:border-carmine');
+			break;
+		case 'back':
+			classes.push('border-2', 'border-portfolio', 'rounded-md', 'bg-portfolio');
 			break;
 	}
 
@@ -27,6 +32,9 @@
 				'font-medium font-roboto md:px-4 md:py-3 lg:px-7 lg:py-4 xs:px-3 xs:py-1 xxs:px-2 xxs:py-1 text-xs xs:text-sm lg:text-base'
 			);
 			break;
+		case 'tiny':
+			classes.push('p-3');
+			break;
 	}
 	classes.push(className);
 	const classesString = classes.filter(Boolean).join(' ');
@@ -35,7 +43,7 @@
 <button
 	on:click
 	{type}
-	class="{classesString} relative flex items-center rounded-md leading-none after:absolute after:top-0 after:left-0 after:-z-10 after:h-0 after:w-0 {effect} after:transition-width-height hover:after:h-full hover:after:w-full"
+	class="{classesString} relative flex items-center rounded-md leading-none {effect} {effectColor}"
 >
 	<slot />
 </button>

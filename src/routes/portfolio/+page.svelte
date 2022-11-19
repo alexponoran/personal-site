@@ -8,7 +8,7 @@
 	import { inview } from 'svelte-inview';
 
 	const options = {
-		threshold: 0.5
+		threshold: 0.7
 	};
 	let num: boolean[] = new Array(portfolioData.length).fill(false);
 	function handleEnter(index: number) {

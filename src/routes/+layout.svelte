@@ -2,8 +2,8 @@
 	import '../app.css';
 	import Navbar from '$lib/UI/Navbar.svelte';
 	import Sidebar from '$lib/UI/Sidebar.svelte';
-	import { page } from '$app/stores';
 	import Transition from '$lib/Transition.svelte';
+	import { page } from '$app/stores';
 	import type { PageData } from './$types';
 	export let data: PageData;
 </script>

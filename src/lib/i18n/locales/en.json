@@ -1,0 +1,24 @@
+{
+	"homePage": {
+		"firstSentence": "Hello! My name is Alex.",
+		"secondSentence": "I'm a web developer.",
+		"firstButton": "View my work",
+		"secondButton": "Contact me"
+	},
+	"navbar": {
+		"home": "Home",
+		"myStory": "my story",
+		"portfolio": "portfolio"
+	},
+	"portfolioPage": {
+		"viewProject": "View Project",
+		"projectText1": {
+			"title": "adanima: designing advertisments with artificial intelligence",
+			"description": "Adanima is a startup that uses artificial intelligence to design advertisments. I was responsible for the design of the website and the design of the logo."
+		},
+		"projectText2": {
+			"title": "Vav Auto: management of orders for an auto parts supplier",
+			"description": "Vav Auto is an auto parts supplier that manages orders using an application that I fully designed. The application is built using SvelteKit. The application is currently in production."
+		}
+	}
+}

@@ -1,11 +1,14 @@
 <script lang="ts">
+	import { fade } from 'svelte/transition';
 	import CarouselArrows from './CarouselArrows.svelte';
 	import Add from 'carbon-icons-svelte/lib/Add.svelte';
 	import Button from '$lib/UI/Button.svelte';
-	import { ArrowLeft } from 'carbon-icons-svelte';
+	import ArrowLeft from 'carbon-icons-svelte/lib/ArrowLeft.svelte';
+	import PortfolioImage from './PortfolioImage.svelte';
 	import { screenWidth } from '../../stores/screenSize';
+	import { isVisible } from '../../stores/isVisible';
 	export let src: string;
-
+	export let index: number;
 	let disableViewProjectButton: boolean = false;
 	let projectHover: boolean = false;
 	let showProjectImage: boolean = false;
@@ -24,19 +27,15 @@
 </script>
 
 <div
-	class="relative h-screen w-screen overflow-hidden bg-portfolio bg-hero-bg bg-auto bg-no-repeat text-white"
+	in:fade={{ duration: 200 }}
+	class="relative h-screen w-screen overflow-hidden bg-portfolio bg-portfolio-bg bg-auto bg-no-repeat text-white"
 >
 	<div
 		class="absolute top-0 bottom-0 left-0 right-0 m-auto xxs:h-[528px] xxs:w-[297px] xs:h-[592px] xs:w-[333px] sm:h-[640px] sm:w-[360px] md:h-[360px] md:w-[640px] lg:h-[432px] lg:w-[768px] xl:h-[576px] xl:w-[1024px] 2xl:h-[648px] 2xl:w-[1152px] 3xl:h-[720px] 3xl:w-[1280px]"
 	>
-		<img
-			class="relative h-full w-full rounded-md transition-opacity duration-500 {projectHover ||
-			(showProjectImage && !showDescription)
-				? 'opacity-100'
-				: 'opacity-20'}"
-			{src}
-			alt="Project"
-		/>
+		{#if $isVisible[index]}
+			<PortfolioImage {src} {index} {showDescription} {showProjectImage} {projectHover} />
+		{/if}
 		<p
 			class="text-shadow absolute -top-6 z-20 font-montserrat tracking-wider shadow-portfolio xs:text-center xs:text-sm sm:-left-1/4 sm:w-max md:left-6 md:text-lg lg:text-2xl xl:left-10 xl:text-3xl 2xl:text-4xl"
 		>

@@ -25,7 +25,7 @@
 
 	switch (size) {
 		case 'normal':
-			classes.push('font-medium font-roboto xs:px-7 xs:py-4 xxs:px-4 xxs:py-2');
+			classes.push('font-medium font-roboto xxs:p-2 sm:px-4 sm:py-2 lg:px-7 lg:py-4');
 			break;
 		case 'small':
 			classes.push(

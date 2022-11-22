@@ -1,0 +1,24 @@
+{
+	"homePage": {
+		"firstSentence": "Salut. Numele meu este Alex.",
+		"secondSentence": "Sunt dezvoltator web.",
+		"firstButton": "Vezi proiectele mele",
+		"secondButton": "Contactează-mă"
+	},
+	"navbar": {
+		"home": "Acasă",
+		"myStory": "povestea mea",
+		"portfolio": "portofoliu"
+	},
+	"portfolioPage": {
+		"viewProject": "Vezi proiectul",
+		"projectText1": {
+			"title": "adanima: crearea de reclame cu ajutorul unei inteligențe artificiale",
+			"description": "Adanima este un startup care a dezvoltat o aplicație web care creează reclame bazate pe inteligența artificială. Acest proiect a fost creat în colaborare cu o echipă de dezvoltatori și designeri. Am fost responsabil pentru crearea aplicației web și a API-ului."
+		},
+		"projectText2": {
+			"title": "Vav Auto: platformă de gestiune pentru un magazin de piese auto",
+			"description": "Vav Auto este o aplicație ce servește un magazin de piese auto cu o cifră de afaceri de 500.000 euro anual. Acest proiect a fost creat în colaborare cu o echipă de dezvoltatori și designeri. Am fost responsabil pentru crearea aplicației web și a API-ului."
+		}
+	}
+}

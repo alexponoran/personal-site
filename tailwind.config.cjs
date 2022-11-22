@@ -3,7 +3,8 @@ module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
 		backgroundImage: {
-			'hero-bg': "url('/src/img/Background.svg')"
+			'home-bg': "url('/src/img/home-bg.svg')",
+			'portfolio-bg': "url('/src/img/portfolio-bg.svg')"
 		},
 		fontFamily: {
 			poppins: 'Poppins, sans-serif',

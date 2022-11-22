@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { ArrowUp } from 'carbon-icons-svelte';
-	import { ArrowDown } from 'carbon-icons-svelte';
+	import ArrowUp from 'carbon-icons-svelte/lib/ArrowUp.svelte';
+	import ArrowDown from 'carbon-icons-svelte/lib/ArrowDown.svelte';
 	import { screenHeight } from '../../stores/screenSize';
 
 	const scrollUp = () => {

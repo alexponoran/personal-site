@@ -14,7 +14,7 @@
 	{#each portfolioData as _, index}
 		<button
 			on:click={() => handleClick(index)}
-			class="relative flex h-6 w-6 items-center justify-center rounded-full border-2 transition-border-color duration-300 hover:border-white {num[
+			class="transition-border-color relative flex h-6 w-6 items-center justify-center rounded-full border-2 duration-300 hover:border-white {num[
 				index
 			]
 				? 'border-white'

@@ -26,7 +26,7 @@
 	};
 </script>
 
-<div
+<section
 	in:fade={{ duration: 200 }}
 	class="relative h-screen w-screen overflow-hidden bg-portfolio bg-portfolio-bg bg-auto bg-no-repeat text-white"
 >
@@ -36,11 +36,11 @@
 		{#if $isVisible[index]}
 			<PortfolioImage {src} {index} {showDescription} {showProjectImage} {projectHover} />
 		{/if}
-		<p
+		<h1
 			class="text-shadow absolute -top-6 z-20 font-montserrat tracking-wider shadow-portfolio xs:text-center xs:text-sm sm:-left-1/4 sm:w-max md:left-6 md:text-lg lg:text-2xl xl:left-10 xl:text-3xl 2xl:text-4xl"
 		>
 			<slot name="projectTitle" />
-		</p>
+		</h1>
 		<div
 			on:pointerenter={handlePointerEnter}
 			on:pointerleave={handlePointerLeave}
@@ -98,7 +98,7 @@
 	{#if $screenWidth >= 640}
 		<CarouselArrows />
 	{/if}
-</div>
+</section>
 
 <style>
 	.text-shadow {

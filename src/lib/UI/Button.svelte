@@ -13,7 +13,7 @@
 	let classes = [''];
 	switch (color) {
 		case 'transparent':
-			classes.push('border-2', 'border-black', 'hover:text-white', 'hover:border-blue-600');
+			classes.push('border-2', 'border-portfolio', 'hover:text-white', 'hover:border-white');
 			break;
 		case 'portfolio':
 			classes.push('border-2', 'border-white', 'hover:text-white', 'hover:border-carmine');

@@ -1,17 +1,21 @@
 <script lang="ts">
-	import { createEventDispatcher } from 'svelte';
-	export let value: string | null | undefined = 'en';
-	const dispatch = createEventDispatcher();
-
-	const switchLocale = (e: Event) =>
-		dispatch('locale-changed', (e.target as HTMLSelectElement).value);
+	import { browser } from '$app/environment';
+	import { _, locale } from 'svelte-i18n';
+	let value: string = 'en';
+	if (browser) {
+		value = localStorage.getItem('locale') || 'en';
+	}
+	const switchLocale = () => {
+		locale.set(value);
+		localStorage.setItem('locale', value);
+	};
 </script>
 
 <div class="mx-4 flex justify-center">
 	<select
-		class="rounded-md border-2 bg-black font-poppins outline-none"
-		{value}
-		on:change|preventDefault={switchLocale}
+		class="rounded-md border-2 bg-transparent text-center font-roboto text-sm outline-none lg:text-xl"
+		bind:value
+		on:change={switchLocale}
 	>
 		<option value="en">EN</option>
 		<option value="ro">RO</option>

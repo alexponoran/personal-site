@@ -1,16 +1,15 @@
 <script lang="ts">
 	import type { ButtonType } from './button.type.js';
-
+	export { className as class };
 	export let type: ButtonType = 'button';
 	export let color = 'transparent';
 	export let size = 'normal';
-	export let effect =
-		'after:absolute after:top-0 after:left-0 after:-z-10 after:h-0 after:w-0 after:transition-width-height hover:after:h-full hover:after:w-full';
-	export let effectColor = 'after:bg-blue-400';
-	let className = '';
-	export { className as class };
+	export let effect = 'default';
+	export let specialProperties = '';
 
+	let className = '';
 	let classes = [''];
+
 	switch (color) {
 		case 'transparent':
 			classes.push('border-2', 'border-portfolio', 'hover:text-white', 'hover:border-white');
@@ -20,6 +19,9 @@
 			break;
 		case 'back':
 			classes.push('border-2', 'border-portfolio', 'rounded-md', 'bg-portfolio');
+			break;
+		case 'white':
+			classes.push('text-black', 'border-2', 'bg-white', 'border-black');
 			break;
 	}
 
@@ -33,9 +35,29 @@
 			);
 			break;
 		case 'tiny':
-			classes.push('p-3');
+			classes.push('xxs:p-1 md:p-3');
 			break;
 	}
+
+	switch (effect) {
+		case 'default':
+			classes.push(
+				'after:absolute after:top-0 after:left-0 after:-z-10 after:h-0 after:w-0 after:transition-width-height hover:after:h-full hover:after:w-full after:bg-blue-300 z-10'
+			);
+			break;
+		case 'default-red':
+			classes.push(
+				'after:absolute after:top-0 after:left-0 after:-z-10 after:h-0 after:w-0 after:transition-width-height hover:after:h-full hover:after:w-full after:bg-carmine z-10'
+			);
+			break;
+		case 'scale':
+			classes.push('hover:scale-105 duration-300');
+			break;
+		case 'scale-red':
+			classes.push('hover:scale-105 hover:bg-carmine hover:border-carmine duration-300');
+			break;
+	}
+
 	classes.push(className);
 	const classesString = classes.filter(Boolean).join(' ');
 </script>
@@ -43,7 +65,7 @@
 <button
 	on:click
 	{type}
-	class="{classesString} relative flex items-center rounded-md leading-none {effect} {effectColor}"
+	class="{classesString} {specialProperties} relative flex items-center rounded-md leading-none"
 >
 	<slot />
 </button>

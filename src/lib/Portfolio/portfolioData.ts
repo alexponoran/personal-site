@@ -1,12 +1,13 @@
 const portfolioData = [
 	{
-		src: 'https://picsum.photos/3840/2160',
-		srcMobile: 'https://picsum.photos/1080/1920'
+		src: 'https://ap-personal-site.s3.eu-central-1.amazonaws.com/portfolio/Screenshot%2B2022-11-21%2Bat%2B17.07.05.png',
+		srcMobile:
+			'https://ap-personal-site.s3.eu-central-1.amazonaws.com/portfolio/Screenshot%2B2022-11-21%2Bat%2B17.07.05.png'
 	},
 	{
-		src: 'https://ap-portfolio-images.s3.eu-central-1.amazonaws.com/Screenshot+2022-11-21+at+17.07.05.png',
+		src: 'https://ap-personal-site.s3.eu-central-1.amazonaws.com/portfolio/Screenshot%2B2022-11-21%2Bat%2B17.07.05.png',
 		srcMobile:
-			'https://ap-portfolio-images.s3.eu-central-1.amazonaws.com/Screenshot+2022-11-21+at+17.07.05.png'
+			'https://ap-personal-site.s3.eu-central-1.amazonaws.com/portfolio/Screenshot%2B2022-11-21%2Bat%2B17.07.05.png'
 	}
 ];
 export default portfolioData;

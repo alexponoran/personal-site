@@ -50,7 +50,8 @@
 				on:click={viewProject}
 				size="small"
 				color="portfolio"
-				effectColor="after:bg-carmine {showProjectImage
+				effect="default-red"
+				specialProperties="{showProjectImage
 					? 'opacity-0 pointer-events-none'
 					: 'opacity-100'} transition-opacity duration-300"
 			>
@@ -64,8 +65,8 @@
 				on:click={viewProject}
 				size="tiny"
 				color="back"
-				effect="hover:scale-110 hover:bg-carmine hover:border-carmine duration-300"
-				effectColor="{showProjectImage
+				effect="scale-red"
+				specialProperties="{showProjectImage
 					? 'opacity-100'
 					: 'opacity-0 pointer-events-none'} transition-all duration-300"
 			>
@@ -77,8 +78,8 @@
 				on:click={viewDescription}
 				size="small"
 				color="back"
-				effect="hover:scale-110 hover:bg-carmine hover:border-carmine duration-300"
-				effectColor="after:bg-carmine {showProjectImage
+				effect="scale-red"
+				specialProperties="{showProjectImage
 					? 'opacity-100'
 					: 'opacity-0 pointer-events-none'} transition-all duration-300"
 			>

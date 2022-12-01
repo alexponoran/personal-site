@@ -3,7 +3,7 @@
 		"firstSentence": "Hello! My name is Alex.",
 		"secondSentence": "I'm a web developer.",
 		"firstButton": "View my work",
-		"secondButton": "Contact me"
+		"secondButton": "View my story"
 	},
 	"navbar": {
 		"home": "Home",
@@ -19,6 +19,20 @@
 		"projectText2": {
 			"title": "Vav Auto: management of orders for an auto parts supplier",
 			"description": "Vav Auto is an auto parts supplier that manages orders using an application that I fully designed. The application is built using SvelteKit. The application is currently in production."
+		}
+	},
+	"myStoryPage": {
+		"part": {
+			"title1": "Early Life",
+			"title2": "Medicine",
+			"title3": "Passion",
+			"title4": "Next..."
+		},
+		"description": {
+			"text1": "Joe",
+			"text2": "",
+			"text3": "",
+			"text4": ""
 		}
 	}
 }

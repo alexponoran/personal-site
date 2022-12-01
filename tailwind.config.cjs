@@ -18,7 +18,8 @@ module.exports = {
 				'slider-arrow': '#242328'
 			},
 			lineHeight: {
-				navigation: '19px'
+				navigation: '19px',
+				'my-story': '150%'
 			},
 			screens: {
 				xxs: '320px',

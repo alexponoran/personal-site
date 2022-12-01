@@ -1,9 +1,9 @@
 {
 	"homePage": {
-		"firstSentence": "Salut. Numele meu este Alex.",
+		"firstSentence": "Salut! Numele meu este Alex.",
 		"secondSentence": "Sunt dezvoltator web.",
 		"firstButton": "Vezi proiectele mele",
-		"secondButton": "Contactează-mă"
+		"secondButton": "Vezi povestea mea"
 	},
 	"navbar": {
 		"home": "Acasă",
@@ -19,6 +19,20 @@
 		"projectText2": {
 			"title": "Vav Auto: platformă de gestiune pentru un magazin de piese auto",
 			"description": "Vav Auto este o aplicație ce servește un magazin de piese auto cu o cifră de afaceri de 500.000 euro anual. Acest proiect a fost creat în colaborare cu o echipă de dezvoltatori și designeri. Am fost responsabil pentru crearea aplicației web și a API-ului."
+		}
+	},
+	"myStoryPage": {
+		"part": {
+			"title1": "Începuturi",
+			"title2": "Medicină",
+			"title3": "Pasiune",
+			"title4": "Va urma..."
+		},
+		"description": {
+			"text1": "Joe",
+			"text2": "",
+			"text3": "",
+			"text4": ""
 		}
 	}
 }

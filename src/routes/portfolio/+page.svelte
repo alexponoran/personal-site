@@ -36,14 +36,12 @@
 	{:else if $screenWidth < 768}
 		{#each portfolioData as project, index}
 			<div use:inview={options} on:enter={(event) => handleEnter(index, event)}>
-				{#if $isVisible[index]}
-					<PortfolioItem {index} src={project.srcMobile}>
-						<span slot="projectTitle"> {$_(`portfolioPage.projectText${index + 1}.title`)} </span>
-						<span slot="projectDescription"
-							>{$_(`portfolioPage.projectText${index + 1}.description`)}
-						</span>
-					</PortfolioItem>
-				{/if}
+				<PortfolioItem {index} src={project.srcMobile}>
+					<span slot="projectTitle"> {$_(`portfolioPage.projectText${index + 1}.title`)} </span>
+					<span slot="projectDescription">
+						{$_(`portfolioPage.projectText${index + 1}.description`)}
+					</span>
+				</PortfolioItem>
 			</div>
 		{/each}
 	{/if}

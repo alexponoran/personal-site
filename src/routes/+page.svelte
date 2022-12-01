@@ -5,29 +5,24 @@
 </script>
 
 <section
-	class="relative h-screen w-screen bg-[url(src/img/homepage-bg.svg)] bg-cover font-poppins font-bold"
+	class="relative h-screen w-screen bg-white/20 bg-[url(https://ap-personal-site.s3.eu-central-1.amazonaws.com/homepage-bg.webp)] bg-cover bg-no-repeat font-poppins font-bold bg-blend-overlay xl:bg-contain"
 >
-	<div class="relative h-full w-full bg-black/80">
-		<h1
-			class="absolute top-4 bottom-0 right-4 m-auto h-max w-max space-y-4 text-2xl text-white xs:text-3xl sm:top-24 sm:right-24 sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
-		>
-			<p>{$_('homePage.firstSentence')}</p>
-			<p>{$_('homePage.secondSentence')}</p>
-			<div class="flex h-max w-max gap-x-8 xxs:text-sm xs:text-base">
-				<Button
-					on:click={() => goto('/portfolio')}
-					effect="hover:scale-110 hover:bg-carmine hover:border-red-600 bg-white text-black duration-300"
-					effectColor="after:bg-carmine transition-all duration-300"
-					>{$_('homePage.firstButton')}
-				</Button>
+	<h1
+		class="absolute top-0 bottom-0 right-0 m-auto h-max w-max space-y-4 rounded-md p-4 text-2xl text-black xs:text-3xl sm:top-24 sm:right-24 sm:text-4xl md:left-1/3 lg:text-5xl xl:text-6xl 2xl:text-7xl"
+	>
+		<p>{$_('homePage.firstSentence')}</p>
+		<p>{$_('homePage.secondSentence')}</p>
+		<div class="flex h-max w-max gap-x-8 xxs:text-sm xs:text-base">
+			<Button color="white" on:click={() => goto('/portfolio')} effect="default"
+				>{$_('homePage.firstButton')}
+			</Button>
 
-				<Button
-					on:click={() => goto('https://linkedin.com/in/alexandru-ponoran-0057b91ba/')}
-					effect="hover:scale-110 bg-white text-black hover:bg-carmine hover:border-red-600 duration-300"
-					effectColor="after:bg-carmine transition-all duration-300"
-					>{$_('homePage.secondButton')}
-				</Button>
-			</div>
-		</h1>
-	</div>
+			<Button
+				color="white"
+				on:click={() => goto('https://linkedin.com/in/alexandru-ponoran-0057b91ba/')}
+				effect="default"
+				>{$_('homePage.secondButton')}
+			</Button>
+		</div>
+	</h1>
 </section>

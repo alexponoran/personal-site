@@ -1,11 +1,10 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
-	import CarouselArrows from './CarouselArrows.svelte';
 	import Add from 'carbon-icons-svelte/lib/Add.svelte';
 	import Button from '$lib/UI/Button.svelte';
 	import ArrowLeft from 'carbon-icons-svelte/lib/ArrowLeft.svelte';
 	import PortfolioImage from './PortfolioImage.svelte';
-	import { screenWidth } from '../../stores/screenSize';
+
 	import { isVisible } from '../../stores/isVisible';
 	export let src: string;
 	export let index: number;
@@ -28,23 +27,23 @@
 
 <section
 	in:fade={{ duration: 200 }}
-	class="relative h-screen w-screen overflow-hidden bg-portfolio bg-portfolio-bg bg-auto bg-no-repeat text-white"
+	class="relative h-screen w-screen overflow-hidden bg-white bg-portfolio-bg bg-auto bg-no-repeat text-black dark:bg-portfolio dark:text-white"
 >
 	<div
-		class="absolute top-0 bottom-0 left-0 right-0 m-auto xxs:h-[528px] xxs:w-[297px] xs:h-[592px] xs:w-[333px] sm:h-[640px] sm:w-[360px] md:h-[360px] md:w-[640px] lg:h-[432px] lg:w-[768px] xl:h-[576px] xl:w-[1024px] 2xl:h-[648px] 2xl:w-[1152px] 3xl:h-[720px] 3xl:w-[1280px]"
+		class="absolute top-0 bottom-0 left-0 right-0 m-auto xxs:h-[480px] xxs:w-[270px] xs:h-[512px] xs:w-[288px] sm:bottom-10 sm:h-[576px] sm:w-[324px] md:bottom-0 md:h-[360px] md:w-[640px] lg:h-[414px] lg:w-[736px] xl:h-[558px] xl:w-[992px] 2xl:h-[630px] 2xl:w-[1120px] 3xl:h-[792px] 3xl:w-[1408px]"
 	>
-		{#if $isVisible[index]}
-			<PortfolioImage {src} {index} {showDescription} {showProjectImage} {projectHover} />
-		{/if}
 		<h1
-			class="text-shadow absolute -top-6 z-20 font-montserrat tracking-wider shadow-portfolio xs:text-center xs:text-sm sm:-left-1/4 sm:w-max md:left-6 md:text-lg lg:text-2xl xl:left-10 xl:text-3xl 2xl:text-4xl"
+			class="h-fit w-full rounded-md font-montserrat tracking-wider xxs:text-xs xs:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl"
 		>
 			<slot name="projectTitle" />
 		</h1>
+		{#if $isVisible[index]}
+			<PortfolioImage {src} {index} {showDescription} {showProjectImage} {projectHover} />
+		{/if}
 		<div
 			on:pointerenter={handlePointerEnter}
 			on:pointerleave={handlePointerLeave}
-			class="absolute top-1/2 bottom-0 left-0 right-full z-10 m-auto h-fit w-max"
+			class="absolute top-1/2 bottom-0 left-0 right-full z-30 m-auto h-fit w-max"
 		>
 			<Button
 				on:click={viewProject}
@@ -60,49 +59,43 @@
 				<Add size={20} />
 			</Button>
 		</div>
-		<div class="absolute left-4 z-10 m-auto h-fit w-max xxs:top-16 sm:top-6">
+		<div class="absolute left-4 top-0 z-30 m-auto h-fit w-max">
 			<Button
 				on:click={viewProject}
 				size="tiny"
 				color="back"
 				effect="scale-red"
 				specialProperties="{showProjectImage
-					? 'opacity-100'
-					: 'opacity-0 pointer-events-none'} transition-all duration-300"
+					? 'opacity-100 pointer-events-auto'
+					: 'opacity-0 pointer-events-none'} transition-all duration-300 absolute top-16 left-4 z-30 m-auto"
 			>
 				<ArrowLeft size={24} />
+				<span class="sr-only">Go back</span>
 			</Button>
 		</div>
-		<div class="absolute bottom-4 right-4 z-10 m-auto h-fit w-max">
+		<div class="absolute bottom-4 right-4 z-30 m-auto h-fit w-max">
 			<Button
 				on:click={viewDescription}
 				size="small"
 				color="back"
 				effect="scale-red"
 				specialProperties="{showProjectImage
-					? 'opacity-100'
+					? 'opacity-100 pointer-events-auto'
 					: 'opacity-0 pointer-events-none'} transition-all duration-300"
 			>
 				Show description
 			</Button>
 		</div>
-		<div class="absolute top-0 bottom-0 left-0 h-full w-full transition-opacity duration-500">
+		<div
+			class="absolute top-0 bottom-0 left-0 z-10 my-auto h-fit w-fit transition-opacity duration-500"
+		>
 			<p
-				class="flex h-full w-full items-center justify-start text-xl {showDescription
+				class="flex h-fit w-fit items-center justify-start text-xl {showDescription
 					? 'opacity-100'
-					: 'opacity-0'} px-20 py-4 font-montserrat leading-10 tracking-wider text-white transition-opacity duration-300 xxs:text-sm sm:text-base md:text-lg"
+					: 'opacity-0'} bg-white px-4 py-4 font-roboto font-medium leading-10 tracking-wider text-black transition-opacity duration-300 dark:bg-portfolio dark:text-white xxs:text-xs md:px-24 md:text-base 2xl:text-xl 3xl:text-2xl"
 			>
 				<slot name="projectDescription" />
 			</p>
 		</div>
 	</div>
-	{#if $screenWidth >= 640}
-		<CarouselArrows />
-	{/if}
 </section>
-
-<style>
-	.text-shadow {
-		text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-	}
-</style>

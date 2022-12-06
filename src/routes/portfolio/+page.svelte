@@ -4,6 +4,7 @@
 	import CarouselDot from '$lib/Portfolio/CarouselDot.svelte';
 	import ScrollArrow from '$lib/Portfolio/ScrollSide.svelte';
 	import PortfolioFooter from '$lib/Portfolio/PortfolioFooter.svelte';
+	import CarouselArrows from '$lib/Portfolio/CarouselArrows.svelte';
 	import portfolioData from '$lib/Portfolio/portfolioData';
 	import { inview } from 'svelte-inview';
 	import { isVisible } from '../../stores/isVisible';
@@ -20,7 +21,6 @@
 	}
 </script>
 
-<svelte:window bind:innerWidth={$screenWidth} bind:innerHeight={$screenHeight} />
 <div class="relative h-full overflow-x-hidden">
 	{#if $screenWidth >= 768}
 		{#each portfolioData as project, index}
@@ -46,6 +46,9 @@
 		{/each}
 	{/if}
 	<CarouselDot {num} />
+	{#if $screenWidth >= 1024}
+		<CarouselArrows />
+	{/if}
 	<ScrollArrow />
 	<PortfolioFooter />
 </div>

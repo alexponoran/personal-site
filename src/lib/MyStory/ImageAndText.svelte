@@ -1,47 +1,35 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
 	import { _ } from 'svelte-i18n';
-	import FailedLoading from '$lib/UI/FailedLoading.svelte';
-	import LoadingSpinner from '$lib/UI/LoadingSpinner.svelte';
 	export let ind: number;
 	export let src: string;
 	export let alt: string;
-
-	let loaded = false;
-	let failed = false;
-	let loading = false;
-
-	onMount(() => {
-		const img = new Image();
-		img.src = src;
-		loading = true;
-
-		img.onload = () => {
-			loading = false;
-			loaded = true;
-		};
-		img.onerror = () => {
-			loading = false;
-			failed = true;
-		};
-	});
+	export let articleHeader: string;
+	export let paragraph: number[];
 </script>
 
-{#if loaded}
+<article
+	in:fly={{ y: 1000, duration: 400, delay: 250 }}
+	class="grid h-max w-full rounded-md lg:grid lg:h-max lg:grid-cols-2 lg:place-items-start"
+>
+	<h1 class="sr-only">{articleHeader}</h1>
 	<div
-		in:fly={{ y: 1000, duration: 400, delay: 250 }}
-		class="grid h-full w-full rounded-md xxs:place-items-center lg:mt-24 lg:grid-cols-2 lg:place-items-start lg:gap-x-8 xl:mt-0"
+		style={`background-image: url(${src})`}
+		class="w-full bg-contain bg-center bg-no-repeat xxs:h-[20vh] xs:h-[30vh] sm:h-[40vh] lg:h-full"
+		aria-label={alt}
+		role="img"
+	/>
+	<div
+		class="h-max w-full space-y-4 font-montserrat text-black dark:text-white lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl"
 	>
-		<img class="xxs:w-5/6 sm:w-2/3 lg:w-full" {src} {alt} />
-		<p class="flex w-full items-center px-16 font-montserrat text-3xl">
-			{$_(`myStoryPage.description.text${ind + 1}`)}
+		<p class="items-center px-4 md:px-16">
+			{$_(`myStoryPage.description.text${paragraph[ind]}`)}
+		</p>
+		<p class="items-center px-4 md:px-16">
+			{$_(`myStoryPage.description.text${paragraph[ind + 1]}`)}
+		</p>
+		<p class="items-center px-4 md:px-16">
+			{$_(`myStoryPage.description.text${paragraph[ind + 2]}`)}
 		</p>
 	</div>
-{:else if failed}
-	<div class="relative h-full w-full">
-		<FailedLoading />
-	</div>
-{:else if loading}
-	<LoadingSpinner />
-{/if}
+</article>

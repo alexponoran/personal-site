@@ -1,24 +1,24 @@
 {
 	"homePage": {
-		"firstSentence": "Salut! Numele meu este Alex.",
-		"secondSentence": "Sunt dezvoltator web.",
-		"firstButton": "Vezi proiectele mele",
-		"secondButton": "Vezi povestea mea"
+		"firstSentence": "Salut, sunt Alex. Creez identități",
+		"secondSentence": "digitale unice cu ajutorul codului.",
+		"firstButton": "Proiectele mele",
+		"secondButton": "Vezi CV-ul meu"
 	},
 	"navbar": {
-		"home": "Acasă",
+		"home": "acasă",
 		"myStory": "povestea mea",
 		"portfolio": "portofoliu"
 	},
 	"portfolioPage": {
 		"viewProject": "Vezi proiectul",
 		"projectText1": {
-			"title": "adanima: crearea de reclame cu ajutorul unei inteligențe artificiale",
-			"description": "Adanima este un startup care a dezvoltat o aplicație web care creează reclame bazate pe inteligența artificială. Acest proiect a fost creat în colaborare cu o echipă de dezvoltatori și designeri. Am fost responsabil pentru crearea aplicației web și a API-ului."
+			"title": "adanima: crearea de reclame cu ajutorul inteligenței artificiale",
+			"description": "Adanima este un startup inovator pe care l-am co-fondat. Este un proiect care folosește inteligența artificială pentru a crea reclame eficiente și atrăgătoare, fără a avea nevoie de un designer sau copywriter. Pasiunea mea pentru design și programare reiese din site-ul web, care a fost creat folosind cele mai noi tehnologii, cum ar fi SvelteKit și TailwindCSS. Tehnologia AI Adanima face crearea de reclame uimitoare rapidă, accesibilă și ușoară - perfectă pentru companiile care doresc să-și sporească vizibilitatea fără a cheltui mulți bani."
 		},
 		"projectText2": {
 			"title": "Vav Auto: platformă de gestiune pentru un magazin de piese auto",
-			"description": "Vav Auto este o aplicație ce servește un magazin de piese auto cu o cifră de afaceri de 500.000 euro anual. Acest proiect a fost creat în colaborare cu o echipă de dezvoltatori și designeri. Am fost responsabil pentru crearea aplicației web și a API-ului."
+			"description": "Vav Auto este o aplicație web fullstack pe care am construit-o pentru a digitaliza gestionarea comenzilor pentru un magazin de piese auto cu un venit anual de aproximativ 500.000 de euro. Acesta a fost un proiect ambițios, la care am lucrat singur, și am profitat de tehnologii de ultimă oră precum SvelteKit, TailwindCSS, Supabase și ChartJS pentru a crea o experiență de utilizator plăcută și o performanță adecvată a sistemului. În prezent, duc proiectul un pas mai departe, valorificând datele culese de la comenzile anterioare pentru a continua îmbunătățirea aplicației web și a automatiza anumite procese."
 		}
 	},
 	"myStoryPage": {
@@ -29,10 +29,18 @@
 			"title4": "Va urma..."
 		},
 		"description": {
-			"text1": "Joe",
-			"text2": "",
-			"text3": "",
-			"text4": ""
+			"text1": "Pasiunea mea pentru calculator a început de la o vârstă foarte fragedă. Petreceam ore întregi jucându-mă cu hardware-ul și software-ul, explorând posibilitățile mașinii. Îmi amintesc că mă jucam pe calculator și exploram diferite aplicații, cum ar fi Paint, Word și Excel.",
+			"text2": "De asemenea, eram fascinat de tastatură. La vârsta de 5 ani, începusem deja să citesc și să scriu doar uitându-mă la literele de pe tastatură, ceea ce a fost cu siguranță un avantaj la școală. Eram uimit de modul în care puteam să scriu cuvinte și propoziții prin câteva apăsări simple ale tastelor.",
+			"text3": "Această pasiune m-a ajutat cu siguranță în cadrul studiilor mele academice și mi-a permis să dezvolt o înțelegere puternică a tehnologiei. Cu toate acestea, nu știam la acea vreme că entuziasmul meu pentru calculatoare se va transforma în cele din urmă într-o carieră.",
+			"text4": "Experiența mea la facultatea de medicină a fost una edificatoare. În fiecare zi am încercat să stăpânesc știința medicinei, învățând în același timp importanța tratării fiecărui pacient cu compasiune.",
+			"text5": "Ceea ce m-a frapat cel mai mult a fost faptul că medicii ar putea folosi tehnologia pentru a îmbunătăți interacțiunea dintre ei și pacienți. Această fascinație m-a determinat în cele din urmă să îmi extind cunoștințele în afara facultății de medicină. În mod surprinzător, am descoperit că pregătirea mea medicală a fost un atu valoros atunci când a venit vorba de programare. Medicina mă învățase cum să învăț eficient, cum să gândesc critic și cum să filtrez lucrurile importante din cantități uriașe de informație.",
+			"text6": "Acest lucru m-a condus rapid la un loc de muncă ca programator într-o mică companie de tip start-up. Am lucrat acolo timp de aproape un an și, datorită pregătirii mele, am putut să extrag informații din ambele lumi și să le aplic la diferite provocări. În cele din urmă, după ce am terminat facultatea de medicină și am lucrat ca medic timp de un an, am decis să renunț la slujba de medic și să mă concentrez doar pe dezvoltarea abilităților mele de programare.",
+			"text7": "Așa cum am menționat anterior, cunoștințele mele din domeniul medical îmi oferă avantajul de a fi bine familiarizat cu informații și concepte care se schimbă rapid și care necesită o asimilare și o adaptare rapidă. Înțeleg necesitatea de a rămâne la curent cu cele mai recente progrese, protocoale și cele mai bune practici.",
+			"text8": "În timp ce lucram ca medic, lucram și la proiecte din lumea software. Eram fascinat de ideea de a crea ceva de la zero și de a vedea cum prinde viață. Am construit o aplicație web care a schimbat complet modul în care o afacere își gestiona comenzile. De asemenea, am construit un site web pentru un start-up care folosește inteligența artificială pentru a crea reclame.",
+			"text9": "În calitate de cadru medical, am întâlnit oameni noi în fiecare zi și am învățat cum să comunic cu ei. Am reușit să folosesc acest lucru în avantajul meu, pentru a înțelege nevoile unei afaceri și ale utilizatorilor. Apoi mi-am putut folosi abilitățile de programare pentru a crea o soluție care să corespundă acestor nevoi.",
+			"text10": "Pasiunea mea pentru programare a crescut de-a lungul anilor și mă bucur de provocarea nesfârșită a învățării continue. Găsesc o mare satisfacție în a deveni din ce în ce mai bun, iar acest lucru îmi alimentează ambiția. Intenționez să continui să îmi dezvolt abilitățile de programare prin ieșirea din zona mea de confort și prin a mă angaja în proiecte noi și diferite.",
+			"text11": "Recent, am dezvoltat un interes pentru bioinformatică și pentru limbajul de programare Rust. Bioinformatica combină domeniile de vârf ale medicinei, informaticii, biologiei și matematicii pentru a dezvolta soluții în domenii precum diagnosticarea și tratarea bolilor. Având în vedere pregătirea mea de doctor în medicină și experiența mea în programare, bioinformatica este un domeniu foarte interesant de urmărit.",
+			"text12": "Când privesc înapoi la călătoria mea, sunt uimit de ceea ce am trăit atât ca medic, cât și ca programator. Sunt entuziasmat pentru ceea ce urmează, pentru a vedea ce noi înălțimi voi atinge și lecțiile pe care le voi învăța pe parcurs. Nimic nu este sigur, dar un lucru este cert; acest nou capitol al vieții mele promite să fie o aventură incitantă, plină de învățare și creștere."
 		}
 	}
 }

@@ -2,7 +2,6 @@
 	import SidebarItem from './SidebarItem.svelte';
 	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
-	import { screenWidth } from '../../stores/screenSize';
 	let color: string;
 	let effect: string;
 	onMount(() => {
@@ -11,8 +10,8 @@
 				color = 'text-white';
 				effect = 'after:bg-white';
 			} else if (value.route.id === '/') {
-				color = 'text-black';
-				effect = 'after:bg-portfolio';
+				color = 'text-black dark:text-white';
+				effect = 'after:bg-portfolio dark:after:bg-white';
 			}
 		});
 	});

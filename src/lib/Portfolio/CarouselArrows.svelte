@@ -18,17 +18,17 @@
 </script>
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<div class="absolute bottom-4 left-0 right-0 flex justify-center gap-x-8">
+<div class="fixed bottom-4 left-28 flex justify-center gap-x-8 3xl:left-0 3xl:right-0">
 	<div
 		on:click={scrollUp}
-		class="rounded-full bg-slider-arrow p-2 transition-colors hover:text-carmine"
+		class="rounded-full bg-neutral-200 p-2 text-black transition-colors hover:text-carmine dark:bg-slider-arrow dark:text-white dark:hover:text-carmine-dark"
 	>
-		<span><ArrowUp size={24} /></span>
+		<span><ArrowUp size={20} /></span>
 	</div>
 	<div
 		on:click={scrollDown}
-		class="rounded-full bg-slider-arrow p-2 transition-colors hover:text-carmine"
+		class="rounded-full bg-neutral-200 p-2 text-black transition-colors hover:text-carmine dark:bg-slider-arrow dark:text-white dark:hover:text-carmine-dark"
 	>
-		<span><ArrowDown size={24} /></span>
+		<span><ArrowDown size={20} /></span>
 	</div>
 </div>

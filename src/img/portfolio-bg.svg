@@ -1,6 +1,0 @@
-<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-  <line x1="0" x2="100" y1="8" y2="8" stroke="gray" stroke-width="0.03" stroke-opacity="0.3" />
-   <line x1="5" x2="5" y1="8" y2="101.5" stroke="gray" stroke-width="0.03" stroke-opacity="0.3" />
-    <line x1="95" x2="95" y1="8" y2="101.5" stroke="gray" stroke-width="0.03" stroke-opacity="0.3" />
-    <line x1="0" x2="100" y1="90" y2="90" stroke="gray" stroke-width="0.03" stroke-opacity="0.3" />
-</svg>

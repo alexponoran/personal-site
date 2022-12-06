@@ -34,8 +34,8 @@
 		in:fade={{ delay: 300, duration: 300 }}
 		class="relative h-full w-full rounded-md transition-opacity duration-500 {projectHover ||
 		(showProjectImage && !showDescription)
-			? 'opacity-100'
-			: 'opacity-20'}"
+			? 'opacity-100 dark:opacity-100'
+			: 'opacity-60 dark:opacity-20'}"
 		{src}
 		alt="Project"
 	/>

@@ -1,10 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+	darkMode: 'class',
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
+		screens: {
+			xxs: '320px',
+			xs: '390px',
+			sm: '640px',
+			md: '768px',
+			lg: '1024px',
+			xl: '1280px',
+			'2xl': '1536px',
+			'3xl': '2000px'
+		},
 		backgroundImage: {
-			'home-bg': "url('/src/img/home-bg.svg')",
-			'portfolio-bg': "url('/src/img/portfolio-bg.svg')"
+			'portfolio-bg':
+				"url('https://ap-personal-site.s3.eu-central-1.amazonaws.com/portfolio-bg.svg')"
 		},
 		fontFamily: {
 			poppins: 'Poppins, sans-serif',
@@ -15,16 +26,12 @@ module.exports = {
 			colors: {
 				portfolio: '#1A191D',
 				carmine: '#DA0A2C',
+				'carmine-dark': '#ee0011',
 				'slider-arrow': '#242328'
 			},
 			lineHeight: {
 				navigation: '19px',
 				'my-story': '150%'
-			},
-			screens: {
-				xxs: '320px',
-				xs: '425px',
-				'3xl': '2000px'
 			},
 			transitionProperty: {
 				width: 'width',

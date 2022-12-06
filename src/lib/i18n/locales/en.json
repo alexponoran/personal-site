@@ -1,12 +1,12 @@
 {
 	"homePage": {
-		"firstSentence": "Hello! My name is Alex.",
-		"secondSentence": "I'm a web developer.",
+		"firstSentence": "Hello! I'm Alex. I create unique",
+		"secondSentence": "digital identities with code.",
 		"firstButton": "View my work",
-		"secondButton": "View my story"
+		"secondButton": "View my CV"
 	},
 	"navbar": {
-		"home": "Home",
+		"home": "home",
 		"myStory": "my story",
 		"portfolio": "portfolio"
 	},
@@ -14,11 +14,11 @@
 		"viewProject": "View Project",
 		"projectText1": {
 			"title": "adanima: designing advertisments with artificial intelligence",
-			"description": "Adanima is a startup that uses artificial intelligence to design advertisments. I was responsible for the design of the website and the design of the logo."
+			"description": "Adanima is an innovative startup that I co-founded. It's a project that makes use of cutting-edge artificial intelligence to design effective, eye-catching advertisements with no need for a designer or copywriter. My passion for design and development shines through in the website, which was crafted using the latest technologies such as SvelteKit and TailwindCSS. Adanima's AI technology makes creating stunning ads fast, affordable, and easy — perfect for businesses wanting to boost their brand visibility without breaking the bank."
 		},
 		"projectText2": {
-			"title": "Vav Auto: management of orders for an auto parts supplier",
-			"description": "Vav Auto is an auto parts supplier that manages orders using an application that I fully designed. The application is built using SvelteKit. The application is currently in production."
+			"title": "Vav Auto: management of orders for an auto parts shop",
+			"description": "Vav Auto is a fullstack web application I built to digitalize the management of orders for an auto parts shop with an annual revenue of around 500.000€. Developing this ambitious project alone, I took advantage of cutting-edge technologies like SvelteKit, TailwindCSS, Supabase and ChartJS to create a smooth user experience and comprehensive system performance. Currently, I am taking VAV Auto one step further by leveraging the data gathered from previous orders to continue improving the web application and automate it further."
 		}
 	},
 	"myStoryPage": {
@@ -29,10 +29,18 @@
 			"title4": "Next..."
 		},
 		"description": {
-			"text1": "Joe",
-			"text2": "",
-			"text3": "",
-			"text4": ""
+			"text1": "My childhood passion for computers began at a very young age. I would spend hours tinkering with the hardware and software, exploring the possibilities of the machine. I remember spending hours playing games and exploring different applications such as Paint, Word, and Excel.",
+			"text2": "I was also fascinated with the keyboard, and I would play with it endlessly. At the age of 5, I was already starting to read and write by simply looking at the letters on the keyboard, something that was definitely a head start in school. I was amazed at how I could type out words and sentences with a few simple presses of the keys.",
+			"text3": "This passion certainly helped with my academic studies and enabled me to develop a strong understanding of technology. Little did I know at the time however that my enthusiasm for computers would eventually blossom into a career.",
+			"text4": "My experience at medical school was an enlightening one. Every day I aimed to master the science of medicine while also learning the importance of treating each patient with compassion.",
+			"text5": "What struck me the most was that doctors could use technology to greatly enhance the interaction between them and the patients. This fascination eventually led me to expand my studies outside of medical school. Surprisingly, I found my medical background to be a valuable asset when it came to programming. Medicine had taught me how to learn efficiently, how to think critically, and how to filter important information out of vast amounts of data.",
+			"text6": "This quickly led me to a software engineering position in a small startup company. I worked there for nearly a year, and thanks to my background, I could draw insights from both worlds and apply them to different challenges. Finally, after finishing medical school and working as a doctor for a year, I decided to quit my job as a doctor and focus on further developing my skills in programming.",
+			"text7": "Like I previously mentioned, my knowledge of the medical field gives me the advantage of being well-versed in rapidly shifting information and concepts that require quick assimilation and adaptation. I understand the need to remain up-to-date with the latest advancements, protocols, and best practices.",
+			"text8": "While I was working as a doctor, I was also working on projects in the software world. I was fascinated by the idea of creating something from scratch and seeing it come to life. I built a web application that completely changed how a business managed their orders. I also built a website for a startup that uses artificial intelligence to design advertisements.",
+			"text9": "As a medical professional, you deal with people every single day, and you learn how to communicate with them. I was able to use this to my advantage, to help me understand the needs of a business and of the users. I was then able to use my programming skills to create a solution that met both needs.",
+			"text10": "My passion for programming has grown over the years and I enjoy the never ending challenge of continual learning. I find great fulfilment in becoming better and faster at coding and this fuels my ambition. I plan to continue developing my programming skills by taking on projects that are outside of my comfort zone and challenging my knowledge.",
+			"text11": "Recently, I have developed an interest in bioinformatics and the Rust programming language. Bioinformatics combines the cutting-edge fields of medicine, computer science, biology, and mathematics to develop solutions in areas like disease diagnosis and treatment. With my medical doctor background and programming experience this makes bioinformatics a very interesting field to pursue.",
+			"text12": "As I look back on my journey, I am amazed at what I experienced both as a doctor and as a programmer. I am excited for what's next, to see what new heights I'll reach and the lessons that I will learn along the way. Nothing is certain but one thing is for sure; this new chapter of my life promises to be an exciting adventure filled with learning and growth."
 		}
 	}
 }

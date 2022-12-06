@@ -11,13 +11,13 @@
 	};
 </script>
 
-<div class="mx-4 flex justify-center">
+<li class="mx-4 flex justify-center">
 	<select
-		class="rounded-md border-2 bg-transparent text-center font-roboto text-sm outline-none lg:text-xl"
+		class="rounded-md border-2 bg-transparent text-center font-roboto text-lg outline-none lg:text-xl"
 		bind:value
 		on:change={switchLocale}
 	>
 		<option value="en">EN</option>
 		<option value="ro">RO</option>
 	</select>
-</div>
+</li>

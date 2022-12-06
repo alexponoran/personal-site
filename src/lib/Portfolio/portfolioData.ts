@@ -1,13 +1,12 @@
 const portfolioData = [
 	{
-		src: 'https://ap-personal-site.s3.eu-central-1.amazonaws.com/portfolio/Screenshot%2B2022-11-21%2Bat%2B17.07.05.png',
-		srcMobile:
-			'https://ap-personal-site.s3.eu-central-1.amazonaws.com/portfolio/Screenshot%2B2022-11-21%2Bat%2B17.07.05.png'
+		src: '',
+		srcMobile: ''
 	},
 	{
-		src: 'https://ap-personal-site.s3.eu-central-1.amazonaws.com/portfolio/Screenshot%2B2022-11-21%2Bat%2B17.07.05.png',
+		src: 'https://ap-personal-site.s3.eu-central-1.amazonaws.com/portfolio/Vav-Piese-Auto.webp',
 		srcMobile:
-			'https://ap-personal-site.s3.eu-central-1.amazonaws.com/portfolio/Screenshot%2B2022-11-21%2Bat%2B17.07.05.png'
+			'https://ap-personal-site.s3.eu-central-1.amazonaws.com/portfolio/Vav-Piese-Auto-mobile.webp'
 	}
 ];
 export default portfolioData;

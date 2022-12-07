@@ -18,7 +18,7 @@
 </script>
 
 <aside
-	class="mb-16 mt-8 flex items-center justify-center xxs:gap-x-2 xs:gap-x-4 sm:gap-x-9 lg:gap-x-16"
+	class="mt-20 mb-6 flex items-center justify-center xxs:gap-x-2 xs:gap-x-4 sm:gap-x-9 lg:mt-16 lg:mb-0 lg:gap-x-16"
 >
 	{#each $highlighted as h, ind}
 		<button

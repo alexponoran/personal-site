@@ -10,7 +10,7 @@
 	};
 </script>
 
-<ul class="fixed top-1/2 bottom-0 h-max w-fit space-y-2 xxs:right-1 xs:right-4 sm:right-8">
+<ul class="absolute top-0 bottom-0 my-auto h-fit w-fit space-y-2 xxs:right-1 xs:right-4 sm:right-8">
 	{#each portfolioData as _, index}
 		<li>
 			<button

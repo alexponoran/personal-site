@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { fade } from 'svelte/transition';
+	import { slide } from 'svelte/transition';
 	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
 	import { _ } from 'svelte-i18n';
@@ -72,18 +72,22 @@
 					size="tiny"
 				>
 					<Menu size={32} />
-					<span class="sr-only">Open main menu</span>
-					<ul
-						class="absolute top-16 right-0 w-max space-y-8 rounded-md border-2 bg-white p-2 text-2xl text-black transition-opacity dark:bg-portfolio dark:text-white {showMenu
-							? 'opacity-100'
-							: 'pointer-events-none opacity-0'}"
-					>
-						<NavbarItem effect="" href="/" text={$_('navbar.home')} />
-						<NavbarItem effect="" href="/my-story" text={$_('navbar.myStory')} />
-						<NavbarItem effect="" href="/portfolio" text={$_('navbar.portfolio')} />
-					</ul>
+					<span class="sr-only">{$_('navbar.burger')}</span>
 				</Button>
 			</li>
+			{#if showMenu}
+				<ul
+					in:slide={{ duration: 300 }}
+					class="absolute top-16 right-0 w-max space-y-8 rounded-md border-2 bg-white p-2 text-2xl text-black transition-opacity dark:bg-portfolio dark:text-white "
+				>
+					<NavbarItem transitionDelay={200} href="/" text={$_('navbar.home')} />
+					<NavbarItem transitionDelay={400} href="/my-story" text={$_('navbar.myStory')} />
+					<NavbarItem transitionDelay={600} href="/portfolio" text={$_('navbar.portfolio')} />
+				</ul>
+			{/if}
 		</ul>
 	</header>
 </nav>
+<!-- {showMenu
+	? 'opacity-100'
+	: 'pointer-events-none opacity-0'} -->

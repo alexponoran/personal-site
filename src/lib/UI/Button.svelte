@@ -20,7 +20,7 @@
 				'dark:border-white',
 				'hover:text-white',
 				'hover:border-carmine',
-				'dark:bg-transparent',
+				'dark:bg-portfolio',
 				'bg-white',
 				'border-portfolio'
 			);
@@ -75,7 +75,7 @@
 			break;
 		case 'default-red':
 			classes.push(
-				'after:absolute after:top-0 after:left-0 after:-z-10 after:h-0 after:w-0 after:transition-width-height hover:after:h-full hover:after:w-full after:bg-carmine dark:after:bg-carmine-dark z-10'
+				'after:absolute after:top-0 after:left-0 after:-z-10 after:h-0 after:w-0 after:transition-width-height hover:after:h-full hover:after:w-full after:bg-carmine dark:after:bg-carmine-dark z-10 after:rounded-md'
 			);
 			break;
 		case 'scale':
@@ -83,11 +83,10 @@
 			break;
 		case 'scale-red':
 			classes.push(
-				'hover:scale-105 hover:bg-carmine dark:hover:bg-carmine-dark dark:hover:border-carmine-dark hover:border-carmine duration-300'
+				'hover:scale-105 hover:bg-carmine dark:hover:bg-carmine-dark dark:hover:border-carmine-dark hover:border-carmine hover:duration-300'
 			);
 			break;
 	}
-
 	classes.push(className);
 	const classesString = classes.filter(Boolean).join(' ');
 </script>

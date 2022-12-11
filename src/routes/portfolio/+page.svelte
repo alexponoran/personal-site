@@ -1,8 +1,6 @@
 <script lang="ts">
 	import { screenWidth, screenHeight } from '../../stores/screenSize';
 	import PortfolioItem from '$lib/Portfolio/PortfolioItem.svelte';
-	import CarouselDot from '$lib/Portfolio/CarouselDot.svelte';
-	import ScrollArrow from '$lib/Portfolio/ScrollSide.svelte';
 	import PortfolioFooter from '$lib/Portfolio/PortfolioFooter.svelte';
 	import CarouselArrows from '$lib/Portfolio/CarouselArrows.svelte';
 	import portfolioData from '$lib/Portfolio/portfolioData';
@@ -11,7 +9,7 @@
 	import { _ } from 'svelte-i18n';
 
 	const options = {
-		threshold: 0.7
+		threshold: 0.5
 	};
 	let num: boolean[] = new Array(portfolioData.length).fill(false);
 	function handleEnter(index: number, { detail }: CustomEvent<ObserverEventDetails>) {
@@ -25,7 +23,7 @@
 	{#if $screenWidth >= 768}
 		{#each portfolioData as project, index}
 			<div use:inview={options} on:enter={(event) => handleEnter(index, event)}>
-				<PortfolioItem {index} src={project.src}>
+				<PortfolioItem {num} {index} src={project.src}>
 					<span slot="projectTitle">{$_(`portfolioPage.projectText${index + 1}.title`)}</span>
 					<span slot="projectDescription"
 						>{$_(`portfolioPage.projectText${index + 1}.description`)}</span
@@ -36,7 +34,7 @@
 	{:else if $screenWidth < 768}
 		{#each portfolioData as project, index}
 			<div use:inview={options} on:enter={(event) => handleEnter(index, event)}>
-				<PortfolioItem {index} src={project.srcMobile}>
+				<PortfolioItem {num} {index} src={project.srcMobile}>
 					<span slot="projectTitle"> {$_(`portfolioPage.projectText${index + 1}.title`)} </span>
 					<span slot="projectDescription">
 						{$_(`portfolioPage.projectText${index + 1}.description`)}
@@ -45,10 +43,9 @@
 			</div>
 		{/each}
 	{/if}
-	<CarouselDot {num} />
+
 	{#if $screenWidth >= 1024}
 		<CarouselArrows />
 	{/if}
-	<ScrollArrow />
 	<PortfolioFooter />
 </div>

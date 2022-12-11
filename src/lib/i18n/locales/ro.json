@@ -8,10 +8,13 @@
 	"navbar": {
 		"home": "acasă",
 		"myStory": "povestea mea",
-		"portfolio": "portofoliu"
+		"portfolio": "portofoliu",
+		"burger": "Arată meniul"
 	},
 	"portfolioPage": {
 		"viewProject": "Vezi proiectul",
+		"viewDescription": "Vezi descrierea",
+		"goBack": "Înapoi",
 		"projectText1": {
 			"title": "adanima: crearea de reclame cu ajutorul inteligenței artificiale",
 			"description": "Adanima este un startup inovator pe care l-am co-fondat. Este un proiect care folosește inteligența artificială pentru a crea reclame eficiente și atrăgătoare, fără a avea nevoie de un designer sau copywriter. Pasiunea mea pentru design și programare reiese din site-ul web, care a fost creat folosind cele mai noi tehnologii, cum ar fi SvelteKit și TailwindCSS. Tehnologia AI Adanima face crearea de reclame uimitoare rapidă, accesibilă și ușoară - perfectă pentru companiile care doresc să-și sporească vizibilitatea fără a cheltui mulți bani."
@@ -23,7 +26,7 @@
 	},
 	"myStoryPage": {
 		"part": {
-			"title1": "Începuturi",
+			"title1": "Începutul",
 			"title2": "Medicină",
 			"title3": "Pasiune",
 			"title4": "Va urma..."

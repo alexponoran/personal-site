@@ -1,13 +1,17 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
+	import { _ } from 'svelte-i18n';
 	import Add from 'carbon-icons-svelte/lib/Add.svelte';
 	import Button from '$lib/UI/Button.svelte';
 	import ArrowLeft from 'carbon-icons-svelte/lib/ArrowLeft.svelte';
 	import PortfolioImage from './PortfolioImage.svelte';
+	import CarouselDot from '$lib/Portfolio/CarouselDot.svelte';
+	import ScrollArrow from '$lib/Portfolio/ScrollSide.svelte';
 
 	import { isVisible } from '../../stores/isVisible';
 	export let src: string;
 	export let index: number;
+	export let num: boolean[];
 	let disableViewProjectButton: boolean = false;
 	let projectHover: boolean = false;
 	let showProjectImage: boolean = false;
@@ -54,7 +58,7 @@
 					? 'opacity-0 pointer-events-none'
 					: 'opacity-100'} transition-opacity duration-300"
 			>
-				VIEW PROJECT
+				{$_('portfolioPage.viewProject')}
 				<span class="w-2" />
 				<Add size={20} />
 			</Button>
@@ -70,7 +74,7 @@
 					: 'opacity-0 pointer-events-none'} transition-all duration-300 absolute top-16 left-4 z-30 m-auto"
 			>
 				<ArrowLeft size={24} />
-				<span class="sr-only">Go back</span>
+				<span class="sr-only">{$_('portfolioPage.goBack')}</span>
 			</Button>
 		</div>
 		<div class="absolute bottom-4 right-4 z-30 m-auto h-fit w-max">
@@ -78,12 +82,12 @@
 				on:click={viewDescription}
 				size="small"
 				color="back"
-				effect="scale-red"
+				effect="default-red"
 				specialProperties="{showProjectImage
 					? 'opacity-100 pointer-events-auto'
 					: 'opacity-0 pointer-events-none'} transition-all duration-300"
 			>
-				Show description
+				{$_('portfolioPage.viewDescription')}
 			</Button>
 		</div>
 		<div
@@ -98,4 +102,6 @@
 			</p>
 		</div>
 	</div>
+	<CarouselDot {num} />
+	<ScrollArrow />
 </section>

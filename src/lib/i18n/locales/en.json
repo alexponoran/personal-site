@@ -8,10 +8,13 @@
 	"navbar": {
 		"home": "home",
 		"myStory": "my story",
-		"portfolio": "portfolio"
+		"portfolio": "portfolio",
+		"burger": "Show menu"
 	},
 	"portfolioPage": {
 		"viewProject": "View Project",
+		"viewDescription": "View Description",
+		"goBack": "Go Back",
 		"projectText1": {
 			"title": "adanima: designing advertisments with artificial intelligence",
 			"description": "Adanima is an innovative startup that I co-founded. It's a project that makes use of cutting-edge artificial intelligence to design effective, eye-catching advertisements with no need for a designer or copywriter. My passion for design and development shines through in the website, which was crafted using the latest technologies such as SvelteKit and TailwindCSS. Adanima's AI technology makes creating stunning ads fast, affordable, and easy — perfect for businesses wanting to boost their brand visibility without breaking the bank."

@@ -11,7 +11,7 @@
 >
 	<div class="h-full w-full bg-white/20 dark:bg-portfolio/60" />
 	<h1
-		class="absolute top-0 bottom-0 right-0 m-auto h-max w-max space-y-6 rounded-md p-4 text-xl text-black dark:text-white xxs:text-base xs:text-xl sm:top-24 sm:right-0 sm:text-3xl md:left-1/3 lg:text-4xl xl:text-5xl 2xl:text-6xl"
+		class="absolute top-0 bottom-0 right-0 m-auto h-max w-max space-y-6 rounded-md p-4 text-black dark:text-white xxs:text-lg xxs:max-xs:-left-1 xs:text-xl sm:top-24 sm:right-0 sm:text-3xl md:max-lg:left-1/4 lg:left-1/3 lg:text-4xl xl:text-5xl 3xl:text-6xl"
 	>
 		<p>{$_('homePage.firstSentence')}</p>
 		<p>{$_('homePage.secondSentence')}</p>
